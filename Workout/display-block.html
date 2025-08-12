@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Types</title>
+    <style>
+        body {
+            background-color: rgb(33, 32, 32);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .box {
+            background-color: #1f3c47;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            height: 400px;
+        }
+        h3{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .block div {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .inline div{
+            display: inline;
+            padding: 40px;
+        }
+        .inline-block div{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box block">
+            <h3>Block</h3>
+            <div style="background-color: rgb(24, 145, 80); width: 200px; height: 80px;"></div>
+            <div style="background-color: rgb(206, 47, 172); width: 200px; height: 80px;"></div>
+            <div style="background-color: rgb(209, 122, 29); width: 100px; height: 80px;"></div>
+            <div style="background-color: rgb(92, 173, 195); width: 200px; height: 80px;"></div>
+        </div>
+        <div class="box inline">
+            <h3>Inline</h3>
+            <br><br>
+            <div style="background-color: rgb(24, 145, 80); color:rgb(24, 145, 80) ;">Aaaaaaaaaaaaa</div>
+            <div style="background-color: rgb(206, 47, 172); color: rgb(206, 47, 172);">Bbbbbbbbbbbbb</div>
+            <div style="background-color: rgb(209, 122, 29); color: rgb(209, 122, 29);">ccc</div>
+            <div style="background-color: rgb(92, 173, 195); color: rgb(92, 173, 195);">Ddddddddddddd</div>
+        </div>
+        <div class="box inline-block">
+            <h3>Inline-block</h3>
+            <div style="background-color: rgb(24, 145, 80); width: 200px; height: 80px;"></div>
+            <div style="background-color: rgb(206, 47, 172); width: 200px; height: 80px;"></div>
+            <div style="background-color: rgb(209, 122, 29); width: 100px; height: 80px;"></div>
+            <div style="background-color: rgb(92, 173, 195); width: 200px; height: 80px;"></div>
+        </div>
+    </div>
+</body>
+</html>
