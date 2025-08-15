@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Active & Checked</title>
+  <style>
+    a:active {
+      /* a:active - changes link color when clicked */
+      color: red;
+    }
+
+    input:checked+label {
+      /* input:checked - changes label color when checkbox is checked */
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>a:active example</h3>
+  <a href="">Click</a>
+  <h3>input:checked example</h3>
+  <input type="checkbox" id="check">
+  <label for="check">Checked</label>
+</body>
+
+</html>
