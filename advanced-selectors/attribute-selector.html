@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        /* 1 */
+        input[required]{
+            border: 2px solid red;
+        }
+        /* 2 */
+        input[type="email"]{
+            background-color: beige;
+        }
+        /* 3 */
+        div[class~="highlight"]{   /* contains word in space-separated list  */
+            background-color: yellow;
+        }
+        /* 4 */
+        p[lang|="en"]{   /* exact or starts with  */
+            color: blue;
+        }
+        /* 5 */
+        a[href^="https"]{  /* starts with  */
+            color: green;
+        }
+        /* 6 */
+        img[src$="jpeg"]{   /* ends with  */
+            border: 2px dashed purple;
+            width: 120px;
+            height: 120px;
+        }
+        /* 7 */
+        a[href*="about"]{   /*  (* - asterisk) contains that value anywhere in link  */
+            font-weight: bold;
+            text-decoration: underline;
+            color: brown;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Attribute Selectors</h2>
+    <!-- 1 -->
+    <input type="text" placeholder="Your name" required><br><br>   <!-- 3 attributes - type,placeholder,required -->
+    <!-- 2 -->
+    <input type="email" placeholder="Your email" ><br><br>
+    <!-- 3 -->
+    <div class="box highlight">Highlighted</div><br><br>
+    <!-- 4 -->
+    <p lang="en">English Paragraph</p>
+    <p lang="en-Us">Us English Paragraph</p><br>
+    <!-- 5 -->
+    <a href="https://example.com/login">Login Page</a><br><br>
+    <!-- 6 -->
+    <img src="background.jpeg" alt=""><br>
+    <!-- 7 -->
+     <a href="https://example.com/about/aaaa">About Page</a>
+</body>
+</html>
