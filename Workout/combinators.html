@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        body {
+            background-color: rgb(155, 198, 215);
+            margin-left: 60px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 40%;
+            background-color: lightgreen;
+            height: 60px;
+            width: 90%;
+        }
+
+        .nav h3 {
+            color: white;
+        }
+
+        img {
+            float: left;/* image goes left */
+            width: 200px;
+        }
+
+        img+p {
+            display: inline-block; /* p will sit to the right of img */
+            width: 50%; 
+            text-align: justify;
+            margin-left: 20px;
+        }
+
+        h2~ol {
+            color: white;
+        }
+        .last>li{
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Anjana's Favorite Animal</h1>
+    <div class="nav">
+        <h3>Home</h3>
+        <h3>Fun Facts</h3>
+    </div>
+    <br>
+    <div>
+        <img src="../images.jpeg" alt="">
+        <p>My name is Anjana,and my favorite animal is dog.Dogs are loyal and loving companions, known for their playful
+            and protective nature.They bring joy and comfort with their boundless energy and affection.Smart and
+            trainable, dogs easily become a part of the family.Their unconditional love makes them true best friends to
+            humans.</p>
+    </div>
+    <div>
+        <h2>Dogs are awesome because...</h2>
+        <ol>
+            <li>Loyal and affectionate companion, always by your side.</li>
+            <li>Full of playful energy and endless love.</li>
+            <li>Protects and comforts with a gentle heart.</li>
+            <li>Brings joy, laughter, and warmth to every moment.</li>
+        </ol>
+        <div>
+            <h2>If I have a dog,I would...</h2>
+            <ol>
+            <div class="last">
+                <li>Take care of him with love and attention.</li>
+                <li>Play with him every day to keep him happy.</li>
+                <li>Protect him like a true friend.</li>
+                <li>Brings joy, laughter, and warmth to every moment.</li>
+            </div>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
