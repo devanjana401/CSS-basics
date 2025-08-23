@@ -1,0 +1,111 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    body {
+        background: #fff;
+    }
+    nav {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        padding: 10px 20px;
+        background: white;
+        border-bottom: 1px solid #ddd;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+    .contact{
+        padding: 3px 12px;
+        background-color: #0d2a3f;
+        color: white;
+        border: none;
+    }
+    .first {
+        background: #0d2a3f;
+        color: white;
+        text-align: start;
+        padding: 150px 100px;
+        height: 500px;
+    }
+    .first h1 {
+        margin-bottom: 15px;
+    }
+    .first p {
+        margin-bottom: 20px;
+    }
+    .first button {
+        background: #fff;
+        color: #0d2a3f;
+        border: none;
+        padding: 6px 14px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .services {
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .services h2 {
+        margin-bottom: 20px;
+    }
+    .service-items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .service-box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .service-box img {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+/* Large devices (Desktop) */
+@media(min-width:769px) {
+    nav {
+        justify-content: end;
+    }
+    .first {
+        padding: 150px 100px;
+    }
+    .service-box {
+        width: 280px;
+    }
+}
+/* Medium devices (Tablet) */
+@media(min-width:481px) and (max-width:768px) {
+    nav {
+        justify-content: center;
+    }
+    .first {
+        padding: 80px 40px;
+    }
+    .service-box {
+        width: 45%;
+    }
+}
+/* Small devices (Phones) */
+@media(max-width:480px) {
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+    .first {
+        text-align: center;
+        padding: 20px 20px;
+    }
+    .service-box {
+        width: 100%;
+    }
+}
