@@ -1,0 +1,20 @@
+nav {
+    background-color: beige;
+    padding: 10px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-right: 15px;
+            a {
+                color: black; // Changed from white to black
+                text-decoration: none;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}
